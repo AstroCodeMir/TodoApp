@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.todo-header {
+  display: flex;
+  flex-direction: row-reverse;     /* Stack vertically */
+  align-items: center;        /* Center horizontally */
+  justify-content: center;    /* Center vertically if needed */
+  text-align: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.todo-header .material-symbols-outlined {
+  font-size: 32px;
+  color: burlywood;
+}
+
+h1 {
+  font-weight: 900;
+  text-align: center;
+  color: burlywood;
+  margin: 0;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.TodoList, .recentNoteList {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+  padding-left: 2px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: burlywood;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+li label {
+  flex-grow: 1;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: burlywood;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: cadetblue;
+}

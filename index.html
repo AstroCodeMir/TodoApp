@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=format_list_bulleted" />
+</head>
+<body>
+  <div class="TodoList">
+    <div class="todo-header">
+      <span class="material-symbols-outlined">format_list_bulleted</span>
+      <h1>My To-do List</h1>
+    </div>
+    <ul id="todoList">
+      <!-- new tasks added here -->
+    </ul>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button id="addTaskButton">Add Task</button>
+    </div>
+  </div>
+
+  <!-- RetrieveList -->
+  <div class="recentNoteList">
+    <div class="recentNote-header">
+      <span class="material-symbols-outlined">format_list_bulleted</span>
+      <h1>Recent Notes</h1>
+    </div>
+    <button id="showAllButton">Show All Tasks in Console</button>
+    <ul id="recentNoteList">
+      <!-- new tasks added here -->
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
